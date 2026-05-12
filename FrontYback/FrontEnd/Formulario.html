@@ -1,0 +1,31 @@
+<!-- tipo de documento es html -->
+<!DOCTYPE html>
+<html lang="es">
+<!--la cabeza del formulario-->
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+</head>
+<!--el cuerpo-->
+<body>
+    <!--titulo del cuerpo-->
+    <h2>Formulario de Contacto</h2>
+    <!--el propio formulario-->
+    <form action="#" method="post">
+        <!--se aclara que es nombre lo que se pone-->
+        <label for="nombre">Nombre:</label><br>
+        <!--el imput tiene que ser un string-->
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
