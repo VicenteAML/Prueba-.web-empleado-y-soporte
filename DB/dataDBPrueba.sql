@@ -20,3 +20,6 @@ CREATE TABLE empleados_rrhh (
   departamento VARCHAR(80) NOT NULL,
   contrato_activo BOOLEAN NOT NULL
 );
+
+ALTER TABLE tickets_soporte ADD COLUMN tiempo_resolucion_horas INT NULL;
+ALTER TABLE empleados_rrhh DROP COLUMN contrato_activo;
