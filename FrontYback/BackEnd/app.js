@@ -5,7 +5,7 @@ const port = 3000
 
 app.use(express.json())
 
-// ============ TICKETS_SOPORTE ============
+// TICKETS_SOPORTE
 app.post('/tickets_soporte', async (req, res) => {
   const { asunto, descripcion, prioridad, fecha_creacion, estado, canal, tiempo_resolucion_horas } = req.body
   if (!asunto || !descripcion || !prioridad || !fecha_creacion || !estado || !canal) {
@@ -74,7 +74,7 @@ app.delete('/tickets_soporte/:id', async (req, res) => {
   }
 })
 
-// ============ EMPLEADOS_RRHH ============
+// EMPLEADOS_RRHH
 app.post('/empleados_rrhh', async (req, res) => {
   const { nombres, cargo, salario, fecha_ingreso, departamento } = req.body
   if (!nombres || !cargo || salario === undefined || !fecha_ingreso || !departamento) {
